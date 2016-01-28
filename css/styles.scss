@@ -1,0 +1,607 @@
+/*-------------------------------------------------------------------
+	Estilos Wendell - Hecho por quien te importa, Linco.com.py
+-------------------------------------------------------------------*/
+@import "compass/reset";
+@import "compass/css3/border-radius";
+@import "compass/css3/font-face";
+@import "compass/css3/images";
+@import "compass/css3/inline-block";
+@import "compass/css3/text-shadow";
+@import "compass/utilities/general/clearfix";
+
+@include font-face("Raleway", font-files(font-url("raleway-regular-webfont.woff", true), woff, font-url("raleway-regular-webfont.otf", true), opentype, font-url("raleway-regular-webfont.svg", true), svg), font-url("raleway-regular-webfont.eot", true));
+@include font-face("RalewayBold", font-files(font-url("raleway-bold-webfont.woff", true), woff, font-url("raleway-bold-webfont.otf", true), opentype, font-url("raleway-bold-webfont.svg", true), svg), font-url("raleway-bold-webfont.eot", true));
+
+$verde:#879A58;
+
+body{
+    background: #fff image-url("fondos/pattern.jpg");
+    color: #000;
+    font-family: "Raleway";
+    font-size: 18px;
+}
+
+
+//Nav y Header
+#nav li ul {
+    position: absolute;
+    //width: 10em;
+    left: -999em;
+    background-color: #fff;
+    padding: 10px; 
+}
+
+#nav li:hover ul {
+    left: auto;
+}
+
+#contenedorHeader{
+    height: 60px;
+    background-color: #fff;
+    #headerLogo{
+        margin-top: 8px;
+        float: left;
+    }
+    #contenedorNav{
+        width: 1170px;
+        margin: 0 auto;
+        #nav{
+            width: 625px;
+            margin: 0 auto;
+            font-size: 13px;
+            ul{
+                @include pie-clearfix;
+                li{
+                    margin-top: 23px;
+                    float: left;
+                    margin-right: 50px;
+                    &#navContacto{
+                        margin-right: 0px;
+                    }
+                    a {
+                        color: #333;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: #879A58;
+                        }
+                    }
+                }
+                ul{
+                    //display: none;
+                }
+            }
+
+            .submenu{
+                li{
+                    float: none;
+                }
+            }
+        }
+        #selectorLenguaje{
+            margin-top: -30px;
+            float: right;
+            font-size: 13px;
+            a{
+                color: #333;
+                text-decoration: none;
+            }
+            
+        }
+    }
+}
+
+
+
+.bodyInicio #contenedorHeader #contenedorNav #nav ul li#navInicio a,
+.bodyAcerca #contenedorHeader #contenedorNav #nav ul li#navAcerca a,
+.bodyProducto #contenedorHeader #contenedorNav #nav ul li#navProductos a,
+.bodyHistoria #contenedorHeader #contenedorNav #nav ul li#navHistoria a,
+.bodyAsociados #contenedorHeader #contenedorNav #nav ul li#navAsociados a,
+.bodyRse #contenedorHeader #contenedorNav #nav ul li#navRse a,
+.bodyContacto #contenedorHeader #contenedorNav #nav ul li#navContacto a{
+    color: #879A58;
+}
+
+
+
+// Backgrounds
+
+.background-inicio{
+    background:url('../images/fondos/fondoInicio.jpg'); background-position: center center;
+    height: 800px;
+
+    -webkit-box-shadow:inset 0 -200px 400px 0 rgba(135,154,88,0.82);
+    box-shadow:inset 0 -200px 400px 0 rgba(135,154,88,0.82);
+    .textoHeader{
+        color: #fff;
+        text-align: center;
+        margin-top: 450px;
+        line-height: 28px;
+        .logoGrid{
+            position: relative;
+            bottom: 20px;
+        }
+    }
+}
+
+
+.background-acerca{
+    background:url('../images/fondos/fondoAcerca.jpg'); background-position: center center;
+    height: 400px;
+    .textoHeader{
+        color: #fff;
+        text-align: center;
+        margin-top: 285px;
+        line-height: 28px;
+        font-family: 'RalewayBold';
+        font-size: 36px;
+
+        .logoGrid{
+            position: relative;
+            bottom: 20px;
+        }
+    }
+}
+
+.background-historia{
+    background:url('../images/fondos/fondoHistoria.jpg'); background-position: center center;
+    height: 400px;
+    .textoHeader{
+        color: #fff;
+        text-align: center;
+        margin-top: 285px;
+        line-height: 28px;
+        font-family: 'RalewayBold';
+        font-size: 36px;
+
+        .logoGrid{
+            position: relative;
+            bottom: 20px;
+        }
+    }
+}
+
+.background-productos{
+    background:url('../images/fondos/fondoProductos.jpg'); background-position: center center;
+    height: 400px;
+    .textoHeader{
+        color: #fff;
+        text-align: center;
+        margin-top: 285px;
+        line-height: 28px;
+        font-family: 'RalewayBold';
+        font-size: 36px;
+
+        .logoGrid{
+            position: relative;
+            bottom: 20px;
+        }
+    }
+}
+
+.background-rse{
+    background:url('../images/fondos/fondoRSE.jpg'); background-position: center center;
+    height: 400px;
+    .textoHeader{
+        color: #fff;
+        text-align: center;
+        margin-top: 285px;
+        line-height: 28px;
+        font-family: 'RalewayBold';
+        font-size: 36px;
+
+        .logoGrid{
+            position: relative;
+            bottom: 20px;
+        }
+    }
+}
+
+.background-asociados{
+    background:url('../images/fondos/fondoAsociados.jpg'); background-position: center center;
+    height: 400px;
+    .textoHeader{
+        color: #fff;
+        text-align: center;
+        margin-top: 285px;
+        line-height: 28px;
+        font-family: 'RalewayBold';
+        font-size: 36px;
+
+        .logoGrid{
+            position: relative;
+            bottom: 20px;
+        }
+    }
+}
+
+.background-contacto{
+    background:url('../images/fondos/fondoContacto.jpg'); background-position: center center;
+    height: 400px;
+    .textoHeader{
+        color: #fff;
+        text-align: center;
+        margin-top: 285px;
+        line-height: 28px;
+        font-family: 'RalewayBold';
+        font-size: 36px;
+
+        .logoGrid{
+            position: relative;
+            bottom: 20px;
+        }
+    }
+}
+
+.background-melaza{
+    background:url('../images/fondos/fondoMelaza.jpg'); background-position: center center;
+    height: 400px;
+    .textoHeader{
+        color: #fff;
+        text-align: center;
+        margin-top: 285px;
+        line-height: 28px;
+        font-family: 'RalewayBold';
+        font-size: 36px;
+
+        .logoGrid{
+            position: relative;
+            bottom: 20px;
+        }
+    }
+}
+
+
+// Contenido
+
+#contenidoInicio{
+    width: 1260px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    @include pie-clearfix;
+    .cuadrado{
+        width: 300px;
+        height: 300px;
+        margin-top: 20px;
+        float: left;
+        color: #fff;
+        text-align: center;
+        background:url('../images/fondos/fondoh3.png'); background-position: center 50px; background-repeat: no-repeat;
+
+        h3{
+            font-size: 24px;
+            margin-top: 65px;
+            margin-bottom: 50px;
+            
+        }
+        p{
+            width: 250px;
+            margin: 0 auto;
+            font-size: 13px;
+            line-height: 23px;
+        }
+    }
+    .verde{
+        background-color: #879A58;
+    }
+    .rojo{
+        background-color: #7D3132;
+    }
+    .izquierda{
+        margin-left: 20px;
+    }
+    .segunda{
+        background-image:url('../images/fondos/fondo1.jpg'); background-position: center center;
+    }
+    .cuatro{
+        background-image:url('../images/fondos/fondo2.jpg'); background-position: center center;
+    }
+    .cinco{
+        background-image:url('../images/fondos/fondo3.jpg'); background-position: center center;
+    }
+    .siete{
+        background-image:url('../images/fondos/fondo4.jpg'); background-position: center center;
+    }
+
+}
+
+#contenido{
+    width: 1170px;
+    margin: 0 auto;
+    background-color: #fff;
+    @include pie-clearfix;
+    #wendell{
+        width: 940px;
+        margin: 0 auto;
+        padding-bottom: 180px;
+        padding-top: 20px; 
+        h3{
+            font-size: 22px;
+            font-family: 'RalewayBold';
+            color: #333;
+            margin-top: 100px;
+            margin-bottom: 30px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 34px;
+            text-align: justify;
+            color: #333;
+            &.margin{
+                margin-top: 50px;
+            }
+            &.firstmargin{
+                margin-top: 100px;
+            }
+        }
+
+        ul{
+            list-style-image:url('../images/fondos/listado.png');
+            margin-left: 28px;
+            color: #333;
+            li{
+                margin-top: 35px;
+                font-size: 14px;
+            }
+        }
+
+        a{
+            position: relative;
+            top:10px;
+            color: $verde;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    }
+
+
+    .oficina{
+        @include pie-clearfix;
+        .descripcion{
+
+            float: left;
+            width: 460px;
+            p{
+                
+                color:#333;
+            }
+            span{
+                color: $verde;
+                
+            }
+        }
+
+        .map{
+            img{
+               
+                width: 460px;
+            }
+            float: left;
+            margin-top: 100px;
+            margin-left: 10px;
+        }
+    }
+
+    .evento{
+        margin: 0 auto;
+        width: 940px;
+        @include pie-clearfix;
+        &.first{
+            padding-top: 120px;
+        }
+
+        &.last{
+            padding-bottom: 100px;
+        }
+
+        span{
+            font-size: 36px;
+            float: left;
+            margin-bottom: 40px;
+            &.rojo{
+                color: #7D3132;
+                background-color: transparent;
+                border-top: 1px solid #7D3132;
+                border-bottom: 1px solid #7D3132;
+            }
+            &.verde{
+                color: #879A58;
+                background-color: transparent;
+                border-top: 1px solid #879A58;
+                border-bottom: 1px solid #879A58;
+            }
+        }
+        .cuadrado{
+            width: 780px;
+            margin-bottom: 40px;
+            float: right;
+            margin-left: 20px;
+            
+            p{
+                width: 720px;
+                margin: 0 auto;
+                padding: 30px 0px;
+                font-size: 18px;
+                color: #fff;
+                line-height: 38px;
+            }
+        }
+
+        .verde{
+            background-color: #879A58;
+        }
+
+        .rojo{
+            background-color: #7D3132;
+        }
+    }
+
+    #menu-productos{
+        
+        padding-top: 120px;
+        ul{
+            @include pie-clearfix;
+            li{
+                background-color: #EAEAE8;
+                color: #333;
+                padding: 5px 10px;
+                font-family: 'RalewayBold';
+                font-size: 24px;
+                float: left;
+                margin-left: 57px;
+                -webkit-border-radius: 10px 10px 10px 10px;
+                border-radius: 10px 10px 10px 10px;
+                cursor: pointer;
+                
+                &.first{
+                    margin-left: 130px;
+                }
+                &.activo{
+                    background-color: #879A58;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    #submenu-productos{
+        
+        margin-top: 40px;
+        ul{
+            @include pie-clearfix;
+            display: none;
+            &.visible{
+                display: block;
+            }
+            li{
+                background-color: #EAEAE8;
+                color: #333;
+                padding: 5px 10px;
+                font-family: 'RalewayBold';
+                font-size: 16px;
+                float: left;
+                margin-left: 25px;
+                -webkit-border-radius: 10px 10px 10px 10px;
+                border-radius: 10px 10px 10px 10px;
+                cursor: pointer;
+                
+                &.first{
+                    margin-left: 130px;
+                }
+                &.activo{
+                    background-color: #879A58;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .oculto{
+        display: none;
+
+    }
+}
+
+.tabla{
+    @include pie-clearfix;
+    clear: both;
+    #wendell{
+        
+        padding-top: 0px;
+        .first{
+           margin-top: 50px !important;
+        }
+    }
+}
+//Footer
+
+#contenedorPie{
+    height: 120px;
+    background-color: #333;
+    
+    #footer{
+        width: 1260px;
+        margin: 0 auto;
+    }
+    .copyright{
+        text-align: center;
+        color: #fff;
+        font-size: 12px;
+        margin-top: 15px;
+        margin-left: 50%;
+        position: relative;
+        right: 105px;
+        top: 20px;
+    }
+    .desarrollo{
+        text-align: center;
+        color: #fff;
+        font-size: 12px;
+        margin-top: 15px;
+        margin: 0 auto;
+        position: relative;
+        top: 20px;
+        float: right;
+        img{
+            margin-left: 10px;
+            position: relative;
+            top: 2px;
+        }
+    }
+}
+
+/*varios*/
+.separador{
+    border-top: 1px solid #E0E2D7;
+    @include pie-clearfix;
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 50px;
+    //margin-top: 1000px;
+
+}
+
+/*Tablas*/
+
+table{
+    @include pie-clearfix;
+    margin: 0 auto;
+    margin-top: 70px;
+    thead{
+        tr{
+            td{
+                background-color: $verde;
+                padding: 10px;
+                border-right: 10px solid #fff;
+                color: #fff;
+            }
+        }
+    }
+
+    tbody{
+        tr{
+            td{
+                padding: 10px;
+                background-color: #E0E2D7;
+                border-right: 10px solid #fff;
+                border-top: 10px solid #fff;
+                border-bottom: 10px solid #fff;
+                color: #333;
+                &.firstColumn{
+                    width: 215px;
+                }
+                &.secondColumn{
+                    width: 520px;
+                }
+                &.thirdColumn{
+                    width: 185px;
+                }
+                &.xlColumn{
+                    width: 730px;
+                }
+            }
+        }
+    }
+}
